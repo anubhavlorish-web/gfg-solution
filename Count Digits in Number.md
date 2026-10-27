@@ -21,9 +21,30 @@ The problem can be found at the following link: [Question Link](https://www.geek
 - **Expected Time Complexity:** O(log n)
 - **Expected Auxiliary Space Complexity:** O(1)
 
-### Accepted Solutions (2)
+### Accepted Solutions (3)
 
 #### Solution 1 (Java)
+
+- **Submitted:** 2026-10-27 22:34:08
+- **Status:** Correct
+- **Marks:** 0
+
+```java
+class Solution {
+    public int countDigits(int n) {
+        // Code here
+        int digits = 1;
+                while (n >= 10) {
+                    n /= 10;
+                    digits++;
+                }
+
+                return (digits);
+            }
+        }
+```
+
+#### Solution 2 (Java)
 
 - **Submitted:** 2026-10-15 22:28:36
 - **Status:** Correct
@@ -48,7 +69,7 @@ class Solution {
 }
 ```
 
-#### Solution 2 (Java)
+#### Solution 3 (Java)
 
 - **Submitted:** 2026-09-18 11:40:20
 - **Status:** Correct
@@ -71,4 +92,4 @@ class Solution {
 }
 ```
 
-*Generated on: 10/16/2026, 9:36:51 AM*
+*Generated on: 10/27/2026, 10:36:27 PM*
